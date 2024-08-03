@@ -12,7 +12,7 @@ export PATH
 #=================================================
 sh_ver="1.4.0"
 github="raw.githubusercontent.com/chiakge/Linux-NetSpeed/master"
-Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_ background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
+Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 Info="${Green_font_prefix}[Info]${Font_color_suffix}"
 Error="${Red_font_prefix}[error]${Font_color_suffix}"
 Tip="${Green_font_prefix}[note]${Font_color_suffix}"
@@ -301,7 +301,7 @@ Update_Shell(){
     echo -e "Current version is [ ${sh_ver} ], start checking for the latest version..."
     sh_new_ver=$(wget --no-check-certificate -qO- "http://${github}/tcp.sh"|grep 'sh_ver="'|awk -F "=" '{print $NF}'|sed 's/\"//g'|head -1)
     [[ -z ${sh_new_ver} ]] && echo -e "${Error} Failed to detect latest version !" && start_menu
-    if [[ ${sh_new_ver} ! = ${sh_ver} ]]; then
+   if [[ ${sh_new_ver} != ${sh_ver} ]]; then
         echo -e "New version [ ${sh_new_ver} ] found, update or not? [Y/n]"
         read -p "(default: y):" yn
         [[ -z "${yn}" ]] && yn="y"
