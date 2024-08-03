@@ -327,17 +327,17 @@ clear
 echo && echo -e " TCP Accelerated One-Click Installation Management Script ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
    -- https://github.com/sh-vp/bbr --
   
-------------Kernel-Management------------------
+---------- --Kernel-Management-- ----------------
  ${Green_font_prefix}1.${Font_color_suffix} Installation of BBR/BBR Magic Modified Kernel
  ${Green_font_prefix}2.${Font_color_suffix} Installation of BBRplus version of kernel 
  ${Green_font_prefix}3. ${Font_color_suffix} Install Lotserver kernel.
-------------Acceleration-Management------------
+---------- --Acceleration-Management-- ----------
  ${Green_font_prefix}4. ${Font_color_suffix} Accelerating with BBR
  ${Green_font_prefix}5.${Font_color_suffix} Accelerated with BBR Magic Modification
  ${Green_font_prefix}6.${Font_color_suffix} Accelerated with Violent BBR Magic Modification (some systems not supported)
  ${Green_font_prefix}7. ${Font_color_suffix} Accelerated with BBRplus Edition
  ${Green_font_prefix}8. ${Font_color_suffix} Accelerating with Lotserver (Razor)
-------------Miscellaneous-Management-----------
+---------- --Miscellaneous-Management-- ---------
  ${Green_font_prefix}9.${Font_color_suffix} Uninstall all acceleration
  ${Green_font_prefix}10.${Font_color_suffix} System Configuration Optimization
  ${Green_font_prefix}11.${Font_color_suffix} Exit Script
@@ -345,7 +345,7 @@ echo && echo -e " TCP Accelerated One-Click Installation Management Script ${Red
 
 	check_status
 	if [[ ${kernel_status} == "noinstall" ]]; then
-        eecho -e " Current status: ${Green_font_prefix}Not installed ${Font_color_suffix} Accelerated kernel ${Red_font_prefix}Please install the kernel${Font_color_suffix}"
+        echo -e " Current status: ${Green_font_prefix}Not installed ${Font_color_suffix} Accelerated kernel ${Red_font_prefix}Please install the kernel${Font_color_suffix}"
 	else
 	echo -e "Current status: ${Green_font_prefix}Installed${Font_color_suffix} ${_font_prefix}${kernel_status}${Font_color_suffix} Accelerated kernel  , ${Green_font_prefix}${run_status}${Font_color_suffix}"
     fi
