@@ -327,7 +327,6 @@ clear
 echo && echo -e " TCP Accelerated One-Click Installation Management Script ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
    -- https://github.com/sh-vp/bbr --
   
- ${Green_font_prefix}0.${Font_color_suffix} Upgrade Scripts
 ------------Kernel-Management------------------
  ${Green_font_prefix}1.${Font_color_suffix} Installation of BBR/BBR Magic Modified Kernel
  ${Green_font_prefix}2.${Font_color_suffix} Installation of BBRplus version of kernel 
