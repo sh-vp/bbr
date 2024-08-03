@@ -351,7 +351,7 @@ echo && echo -e " TCP Accelerated One-Click Installation Management Script ${Red
 	echo -e "Current status: ${Green_font_prefix}Installed${Font_color_suffix} ${_font_prefix}${kernel_status}${Font_color_suffix} Accelerated kernel  , ${Green_font_prefix}${run_status}${Font_color_suffix}"
     fi
 echo
-read -p " Please enter the numbers [0-11]: [0-11]:" num
+read -p " Please enter the numbers [0-11]:" num
 case "$num" in
 	0)
 	Update_Shell
