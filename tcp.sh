@@ -354,10 +354,9 @@ echo && echo -e " TCP Accelerated One-Click Installation Management Script ${Red
 
 	check_status
 	if [[ ${kernel_status} == "noinstall" ]]; then
-        echo -e " Current status: ${Green_font_prefix}Not installed ${Font_color_suffix} Accelerated kernel ${Red_font_prefix}Please install the kernel ${Font_color_suffix} first "
-    else
-        echo -e " Current status: ${Green_font_prefix}Installed ${Font_color_suffix} ${_font_prefix}${kernel_status}${Font_color_suffix} Accelerated kernel , ${Green_font_prefix }${run_status}${Font_color_suffix}"
-        
+        eecho -e " Current status: ${Green_font_prefix}Not installed ${Font_color_suffix} Accelerated kernel ${Red_font_prefix}Please install the kernel${Font_color_suffix}"
+	else
+	echo -e "Current status: ${Green_font_prefix}Installed${Font_color_suffix} ${_font_prefix}${kernel_status}${Font_color_suffix} Accelerated kernel  , ${Green_font_prefix}${run_status}${Font_color_suffix}"
     fi
 echo
 read -p " Please enter the numbers [0-11]: [0-11]:" num
