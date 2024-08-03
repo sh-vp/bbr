@@ -1,3 +1,3 @@
 ```
-bash <(curl -L -s https://github.com/sh-vp/bbr/blob/main/tcp.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/sh-vp/bbr/main/tcp.sh)
 ```
